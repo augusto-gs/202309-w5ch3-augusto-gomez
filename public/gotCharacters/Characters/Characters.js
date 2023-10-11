@@ -3,12 +3,14 @@ class Character {
   family;
   age;
   isAlive;
+  series;
 
-  constructor(name, family, age, isAlive) {
+  constructor(name, family, age, isAlive, series = "Game of Thrones") {
     this.name = name;
     this.family = family;
     this.age = age;
     this.isAlive = isAlive;
+    this.series = series;
   }
 
   die() {

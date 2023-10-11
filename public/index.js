@@ -59,3 +59,15 @@ const getCommunicationFromCharacters = (characters) => {
 };
 
 console.log(getCommunicationFromCharacters(characters));
+
+console.log(tyrionLannister.series);
+
+const killJaimeAndTyrion = () => {
+  tyrionLannister.die();
+  jaimeLannister.die();
+};
+
+killJaimeAndTyrion();
+
+console.log(jaimeLannister);
+console.log(tyrionLannister);
