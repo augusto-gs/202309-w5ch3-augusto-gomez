@@ -16,7 +16,7 @@ class Character {
   }
 
   communicate() {
-    "I will say to you this";
+    return "I will say to you this";
   }
 }
 

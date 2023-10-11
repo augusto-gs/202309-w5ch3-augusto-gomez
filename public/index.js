@@ -34,10 +34,28 @@ const bronn = new Squire(
   3,
 );
 
+const characters = [
+  joffreyBaratheon,
+  jaimeLannister,
+  daenerysTargaryen,
+  tyrionLannister,
+  bronn,
+];
+
 console.log(joffreyBaratheon);
 console.log(jaimeLannister);
 console.log(daenerysTargaryen);
 console.log(tyrionLannister);
 console.log(bronn);
 
-console.log(tyrionLannister.communicate());
+const getCommunicationFromCharacters = (characters) => {
+  const charactersMessages = [];
+
+  characters.forEach((character) => {
+    charactersMessages.push(character.communicate());
+  });
+
+  return charactersMessages;
+};
+
+console.log(getCommunicationFromCharacters(characters));

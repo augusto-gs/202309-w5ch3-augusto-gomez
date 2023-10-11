@@ -11,7 +11,7 @@ class Fighter extends Character {
   }
 
   communicate() {
-    return `${super.communicate} First I hit then I ask questions`;
+    return `${super.communicate()} First I hit then I ask questions`;
   }
 }
 

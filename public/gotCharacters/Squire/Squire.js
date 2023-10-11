@@ -11,7 +11,7 @@ class Squire extends Character {
   }
 
   communicate() {
-    return `${super.communicate} I am a loser`;
+    return `${super.communicate()} I am a loser`;
   }
 }
 

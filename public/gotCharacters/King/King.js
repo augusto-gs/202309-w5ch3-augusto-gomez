@@ -9,7 +9,7 @@ class King extends Character {
   }
 
   communicate() {
-    return `${super.communicate} You are all going to die`;
+    return `${super.communicate()} You are all going to die`;
   }
 }
 
