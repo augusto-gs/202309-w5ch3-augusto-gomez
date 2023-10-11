@@ -4,6 +4,13 @@ class Character {
   age;
   isAlive;
 
+  constructor(name, family, age, isAlive) {
+    this.name = name;
+    this.family = family;
+    this.age = age;
+    this.isAlive = isAlive;
+  }
+
   die() {
     this.isAlive = false;
   }
